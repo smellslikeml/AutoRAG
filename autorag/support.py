@@ -144,6 +144,7 @@ def get_support_modules(module_name: str) -> Callable:
 		"recency_filter": ("autorag.nodes.passagefilter", "RecencyFilter"),
 		"threshold_cutoff": ("autorag.nodes.passagefilter", "ThresholdCutoff"),
 		"percentile_cutoff": ("autorag.nodes.passagefilter", "PercentileCutoff"),
+		"score_gate": ("autorag.nodes.passagefilter", "ScoreGateFilter"),
 		"PassPassageFilter": ("autorag.nodes.passagefilter", "PassPassageFilter"),
 		"SimilarityThresholdCutoff": (
 			"autorag.nodes.passagefilter",
@@ -156,6 +157,7 @@ def get_support_modules(module_name: str) -> Callable:
 		"RecencyFilter": ("autorag.nodes.passagefilter", "RecencyFilter"),
 		"ThresholdCutoff": ("autorag.nodes.passagefilter", "ThresholdCutoff"),
 		"PercentileCutoff": ("autorag.nodes.passagefilter", "PercentileCutoff"),
+		"ScoreGateFilter": ("autorag.nodes.passagefilter", "ScoreGateFilter"),
 		# passage_compressor
 		"tree_summarize": ("autorag.nodes.passagecompressor", "TreeSummarize"),
 		"pass_compressor": ("autorag.nodes.passagecompressor", "PassCompressor"),
