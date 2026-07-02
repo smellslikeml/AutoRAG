@@ -72,6 +72,14 @@ def get_support_modules(module_name: str) -> Callable:
 			"autorag.nodes.passageaugmenter",
 			"PassPassageAugmenter",
 		),
+		"scar_augmenter": (
+			"autorag.nodes.passageaugmenter",
+			"SemanticContinuityAugmenter",
+		),
+		"SemanticContinuityAugmenter": (
+			"autorag.nodes.passageaugmenter",
+			"SemanticContinuityAugmenter",
+		),
 		# passage_reranker
 		"monot5": ("autorag.nodes.passagereranker", "MonoT5"),
 		"MonoT5": ("autorag.nodes.passagereranker", "MonoT5"),
